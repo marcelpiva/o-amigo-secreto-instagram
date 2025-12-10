@@ -1,0 +1,91 @@
+# Calendário de Publicações - Dezembro 2025
+
+## Visão Geral
+
+| Semana | Posts | Tema Principal | Boost Total |
+|--------|-------|----------------|-------------|
+| 1 (10-13) | 3 | Teaser | R$ 250 |
+| 2 (14-18) | 5 | Lançamento + Features | R$ 200 |
+| 3 (19-23) | 4 | Social Proof + Urgência | R$ 300 |
+| 4 (24-28) | 4 | Natal + Retrospectiva | R$ 0 |
+| **Total** | **16** | | **R$ 750** |
+
+---
+
+## Semana 1: Teaser (10-13 Dezembro)
+
+| # | Data | Hora | Tipo | Formato | Título | Boost |
+|---|------|------|------|---------|--------|-------|
+| 01 | 10/12 | 19h | Story | 1080x1920 | Countdown Teaser | - |
+| 02 | 11/12 | 12h | Carrossel | 1080x1080 | 5 Problemas do Amigo Secreto | R$ 100 |
+| 03 | 12/12 | 18h | Reels | 1080x1920 | Revelação da Marca | R$ 150 |
+
+**Objetivo:** Criar curiosidade, capturar emails na waitlist
+
+---
+
+## Semana 2: Lançamento + Features (14-18 Dezembro)
+
+| # | Data | Hora | Tipo | Formato | Título | Boost |
+|---|------|------|------|---------|--------|-------|
+| 04 | 14/12 | 10h | Estático | 1080x1080 | **LANÇAMENTO** | R$ 200 |
+| 05 | 15/12 | 19h | Carrossel | 1080x1080 | Feature: Algoritmo Inteligente | - |
+| 06 | 16/12 | 12h | Reels | 1080x1920 | Feature: Wishlist | - |
+| 07 | 17/12 | 19h | Estático | 1080x1080 | Feature: Chat Anônimo | - |
+| 08 | 18/12 | 12h | Story | 1080x1920 | Feature: Grupos Ilimitados | - |
+
+**Objetivo:** Conversão em downloads, educação sobre features
+
+---
+
+## Semana 3: Social Proof + Urgência (19-23 Dezembro)
+
+| # | Data | Hora | Tipo | Formato | Título | Boost |
+|---|------|------|------|---------|--------|-------|
+| 09 | 19/12 | 18h | Reels | 1080x1920 | Tutorial Rápido | R$ 100 |
+| 10 | 20/12 | 10h | Carrossel | 1080x1080 | Depoimentos | - |
+| 11 | 21/12 | 12h | Estático | 1080x1080 | Countdown Natal (4 dias) | R$ 100 |
+| 12 | 22/12 | 10h | Carrossel | 1080x1080 | Para Empresas (B2B) | R$ 100 |
+
+**Objetivo:** Validação social, urgência, capturar mercado B2B
+
+---
+
+## Semana 4: Natal + Pós-Lançamento (24-28 Dezembro)
+
+| # | Data | Hora | Tipo | Formato | Título | Boost |
+|---|------|------|------|---------|--------|-------|
+| 13 | 24/12 | 09h | Story | 1080x1920 | Feliz Natal | - |
+| 14 | 26/12 | 18h | Estático | 1080x1080 | Ano Novo | - |
+| 15 | 27/12 | 12h | Carrossel | 1080x1080 | Retrospectiva | - |
+| 16 | 28/12 | 12h | Carrossel | 1080x1080 | O Ano Todo (4 ocasiões) | - |
+
+**Objetivo:** Branding, engajamento, preparar retenção para 2026
+
+---
+
+## Melhores Horários
+
+| Dia | Horário | Justificativa |
+|-----|---------|---------------|
+| Segunda a Sexta | 12h | Horário de almoço - alto engajamento |
+| Segunda a Sexta | 19h | Fim do expediente - pico de uso |
+| Sábado e Domingo | 10h-12h | Manhã relaxada, planejamento familiar |
+
+---
+
+## Frequência
+
+- **Semana 1-2:** 1 post/dia (construção de awareness)
+- **Semana 3-4:** 1 post a cada 1-2 dias (manutenção)
+
+---
+
+## Checklist por Post
+
+- [ ] Imagem/vídeo exportado em alta resolução
+- [ ] Caption revisada e ajustada
+- [ ] Hashtags copiadas
+- [ ] CTA claro (link na bio)
+- [ ] Agendamento configurado
+- [ ] Boost configurado (se aplicável)

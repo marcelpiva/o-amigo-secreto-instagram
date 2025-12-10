@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  /* O Amigo Secreto - Dark Theme */
+  --background: #363636;
+  --foreground: #E5E5E5;
+  --card: #484848;
+  --card-foreground: #E5E5E5;
+  --primary: #D4623A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #6AAF52;
+  --secondary-foreground: #000000;
+  --accent: #7AB4E0;
+  --accent-foreground: #000000;
+  --muted: #434343;
+  --muted-foreground: #AFAFAF;
+  --destructive: #F5A945;
+  --border: #666666;
+  --ring: #D4623A;
+  --light-bg: #D4D4D4;
+  --light-card: #B8B8B8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-oxanium);
+  --font-mono: var(--font-source-code-pro);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-oxanium), 'Oxanium', system-ui, sans-serif;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Instagram Post Sizes */
+.post-square {
+  width: 1080px;
+  height: 1080px;
+}
+
+.post-vertical {
+  width: 1080px;
+  height: 1350px;
+}
+
+.post-story {
+  width: 1080px;
+  height: 1920px;
+}
+
+/* Preview sizes (scaled down) */
+.preview-square {
+  width: 270px;
+  height: 270px;
+}
+
+.preview-vertical {
+  width: 270px;
+  height: 337.5px;
+}
+
+.preview-story {
+  width: 270px;
+  height: 480px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--destructive) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(72, 72, 72, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 98, 58, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(212, 98, 58, 0.6);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
