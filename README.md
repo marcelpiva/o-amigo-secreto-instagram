@@ -1,21 +1,21 @@
 # O Amigo Secreto - Campanha Instagram/TikTok
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Posts](https://img.shields.io/badge/posts-16-green)
-![Boost](https://img.shields.io/badge/boost-R%24750-orange)
+![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Posts](https://img.shields.io/badge/posts-58-green)
+![Boost](https://img.shields.io/badge/boost-R%241.250-orange)
 
-Projeto para criação e exportação de posts de Instagram e TikTok para a campanha de lançamento do app "O Amigo Secreto".
+Projeto para criacao e exportacao de posts de Instagram e TikTok para a campanha de lancamento do app "O Amigo Secreto".
 
 ## Sobre a Campanha
 
-- **Lançamento:** Dezembro 2025
-- **Posts:** 16 posts (estáticos, carrosséis, stories, reels)
-- **Orçamento Boost:** R$ 750
+- **Periodo:** Dezembro 2025 - Marco 2026
+- **Posts:** 58 posts (estaticos, carrosseis, stories, reels)
+- **Orcamento Boost:** R$ 1.250
 - **Plataformas:** Instagram + TikTok
 
 ## Formatos Suportados
 
-| Formato | Dimensão | Uso |
+| Formato | Dimensao | Uso |
 |---------|----------|-----|
 | Square | 1080x1080 | Instagram Feed |
 | Vertical | 1080x1350 | Instagram Feed |
@@ -23,7 +23,7 @@ Projeto para criação e exportação de posts de Instagram e TikTok para a camp
 
 ## Como Usar
 
-### 1. Instalar dependências
+### 1. Instalar dependencias
 
 ```bash
 npm install
@@ -52,19 +52,20 @@ Abra [http://localhost:3000](http://localhost:3000) no navegador.
 instagram/
 ├── src/
 │   ├── app/
-│   │   ├── page.tsx         # Galeria principal
+│   │   ├── page.tsx         # Galeria principal com filtros
 │   │   └── layout.tsx       # Layout com fontes
 │   ├── components/
-│   │   ├── posts/           # 16 componentes de posts
-│   │   └── ui/              # Componentes base
+│   │   ├── posts/           # 58 componentes de posts
+│   │   └── ui/              # Componentes base (shadcn/ui)
 │   └── lib/
 │       ├── posts-data.ts    # Dados de todos os posts
 │       └── colors.ts        # Paleta de cores
 ├── public/
 │   └── logo.png             # Logo do app
 └── docs/
-    ├── ESTRATEGIA.md        # Estratégia de marketing
-    ├── CALENDARIO.md        # Cronograma de publicação
+    ├── ESTRATEGIA.md        # Estrategia de marketing
+    ├── CALENDARIO.md        # Cronograma de publicacao
+    ├── CAPTIONS.md          # Captions e hashtags
     └── BOOST.md             # Guia de impulsionamento
 ```
 
@@ -78,57 +79,48 @@ instagram/
 | **Background** | #363636 |
 | **Fonte** | Oxanium (Google Fonts) |
 
-## Lista de Posts
+## Calendario de Posts
 
-### Semana 1: Teaser (10-13 Dez)
-| # | Título | Tipo | Boost |
-|---|--------|------|-------|
-| 01 | Countdown Teaser | Story | - |
-| 02 | 5 Problemas do Amigo Secreto | Carrossel | R$100 |
-| 03 | Revelação da Marca | Reels | R$150 |
+### Dezembro 2025 (16 posts) - R$750
+Lancamento + Natal
 
-### Semana 2: Lançamento (14-18 Dez)
-| # | Título | Tipo | Boost |
-|---|--------|------|-------|
-| 04 | **LANÇAMENTO** | Estático | R$200 |
-| 05 | Algoritmo Inteligente | Carrossel | - |
-| 06 | Wishlist | Reels | - |
-| 07 | Chat Anônimo | Estático | - |
-| 08 | Grupos Ilimitados | Story | - |
+### Janeiro 2026 (14 posts) - R$150
+Ano Novo, Novas Celebracoes
+- Posts 17-30
+- Temas: Ano Novo, Badges, Depoimentos, Tutoriais
 
-### Semana 3: Social Proof (19-23 Dez)
-| # | Título | Tipo | Boost |
-|---|--------|------|-------|
-| 09 | Tutorial Rápido | Reels | R$100 |
-| 10 | Depoimentos | Carrossel | - |
-| 11 | Countdown Natal | Estático | R$100 |
-| 12 | Para Empresas B2B | Carrossel | R$100 |
+### Fevereiro 2026 (14 posts) - R$150
+Folia e Amizade (Carnaval)
+- Posts 31-44
+- Temas: Carnaval, Team Building B2B, UGC
 
-### Semana 4: Natal (24-28 Dez)
-| # | Título | Tipo | Boost |
-|---|--------|------|-------|
-| 13 | Feliz Natal | Story | - |
-| 14 | Ano Novo | Estático | - |
-| 15 | Retrospectiva | Carrossel | - |
-| 16 | O Ano Todo | Carrossel | - |
+### Marco 2026 (14 posts) - R$200
+Mulheres que Inspiram + Pascoa
+- Posts 45-58
+- Temas: Dia da Mulher, Amigo Chocolate, Pascoa
 
-## Documentação
+## Features da Galeria
 
-- [Estratégia de Marketing](docs/ESTRATEGIA.md)
-- [Calendário de Publicações](docs/CALENDARIO.md)
-- [Guia de Impulsionamento](docs/BOOST.md)
+- Filtros por mes, tipo, status e boost
+- Visualizacao em Grid ou Calendario
+- Preview em tempo real
+- Exportacao PNG em alta resolucao
+- Navegacao entre slides de carrosseis
+- Exibicao de captions e hashtags
 
 ## Tecnologias
 
 - Next.js 16
 - TypeScript
 - Tailwind CSS
-- html-to-image (exportação PNG)
+- shadcn/ui
+- html-to-image (exportacao PNG)
+- Unsplash (fotos royalty-free)
 
 ## Links
 
 - [App O Amigo Secreto](https://oamigosecreto.app)
-- [Repositório Principal](https://github.com/marcelpiva/o-amigo-secreto)
+- [Repositorio Principal](https://github.com/marcelpiva/o-amigo-secreto)
 
 ---
 
