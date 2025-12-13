@@ -24,15 +24,29 @@ const slides = [
     type: 'poll',
     options: [
       { icon: '🎲', name: 'Sorteio inteligente', desc: 'Algoritmo perfeito' },
-      { icon: '💬', name: 'Chat anônimo', desc: 'Converse em segredo' },
+      { icon: '🗳️', name: 'Sorteio Democratico', desc: 'Todo mundo vota!', isNew: true },
+      { icon: '💬', name: 'Chat anonimo', desc: 'Converse em segredo' },
       { icon: '📝', name: 'Wishlist', desc: 'Lista de desejos' },
-      { icon: '🏆', name: 'Badges', desc: 'Conquistas' },
     ],
-    cta: 'Experimente todas!',
+    cta: 'Deslize para mais!',
     color: '#7AB4E0',
     bgFrom: '#0a1520',
     bgVia: '#152535',
     image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1080&h=1920&fit=crop',
+  },
+  {
+    type: 'poll',
+    options: [
+      { icon: '🎵', name: 'Temas Divertidos', desc: 'Musica, filme, meme', isNew: true },
+      { icon: '📸', name: 'Mural de Fotos', desc: 'Feed do grupo', isNew: true },
+      { icon: '❓', name: 'Quiz do Grupo', desc: 'Perguntas divertidas', isNew: true },
+      { icon: '🏆', name: 'Ranking de Presentes', desc: 'Vote no melhor!', isNew: true },
+    ],
+    cta: 'Experimente todas!',
+    color: '#6AAF52',
+    bgFrom: '#0a1520',
+    bgVia: '#152535',
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1080&h=1920&fit=crop',
   },
 ];
 
@@ -161,9 +175,21 @@ export function Post28EnqueteFeature({ slideIndex = 0, preview = true }: Post28E
               {slide.options.map((opt, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 px-4 py-3 bg-white/10 backdrop-blur border border-white/20"
+                  className="flex items-center gap-3 px-4 py-3 bg-white/10 backdrop-blur border border-white/20 relative"
                   style={{ padding: preview ? '12px 16px' : '24px 32px' }}
                 >
+                  {opt.isNew && (
+                    <div
+                      className="absolute -top-1 -right-1 px-2 py-0.5 font-bold text-white"
+                      style={{
+                        fontSize: preview ? '8px' : '18px',
+                        background: '#6AAF52',
+                        padding: preview ? '2px 6px' : '4px 12px',
+                      }}
+                    >
+                      NOVO
+                    </div>
+                  )}
                   <span style={{ fontSize: preview ? '24px' : '60px' }}>{opt.icon}</span>
                   <div className="text-left">
                     <p

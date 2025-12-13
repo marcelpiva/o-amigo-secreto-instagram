@@ -77,6 +77,9 @@ import { Post56UltimasDicasPascoa } from '@/components/posts/Post56UltimasDicasP
 import { Post57TutorialPascoa } from '@/components/posts/Post57TutorialPascoa';
 import { Post58UltimaChamada } from '@/components/posts/Post58UltimaChamada';
 
+// Import HUMANIZED posts - Crescimento de Seguidores
+import { PostH1AjudeNos } from '@/components/posts/PostH1AjudeNos';
+
 // Component placeholder for posts that don't have components yet
 function PlaceholderPost({ preview, slideIndex = 0, post }: { preview?: boolean; slideIndex?: number; post?: PostData }) {
   const displayPost = post || { id: 0, title: 'Post', type: 'static', slides: [], month: 'dezembro' as PostMonth };
@@ -238,6 +241,13 @@ const postComponents: Record<number, React.ComponentType<{ preview?: boolean; sl
   56: Post56UltimasDicasPascoa,
   57: Post57TutorialPascoa,
   58: Post58UltimaChamada,
+
+  // HUMANIZED posts - Crescimento de Seguidores
+  59: PostH1AjudeNos,
+  // 60: PostH2QuemFaz, // TODO
+  // 61: PostH3PorQueGratuitos, // TODO
+  // 62: PostH4SigaParaGratuito, // TODO
+  // 63: PostH5ObrigadoComunidade, // TODO
 };
 
 const monthLabels: Record<PostMonth, string> = {

@@ -1,171 +1,262 @@
 'use client';
 
+import { useState } from 'react';
 import { PostFrame } from '../ui/PostFrame';
-import Image from 'next/image';
 
 interface Post51NovaFeatureProps {
   preview?: boolean;
 }
 
+const slides = [
+  {
+    type: 'cover',
+    emoji: '🚀',
+    title: '5 NOVAS',
+    subtitle: 'FEATURES!',
+    desc: 'O app mais completo ficou ainda melhor',
+    color: '#7AB4E0',
+  },
+  {
+    type: 'feature',
+    emoji: '🗳️',
+    title: 'SORTEIO DEMOCRATICO',
+    desc: 'Todo mundo decide junto! O grupo vota para aprovar ou reprovar o sorteio.',
+    bullets: ['Votacao em tempo real', 'Ate 3 rodadas', 'Aprovado por maioria'],
+    color: '#6AAF52',
+  },
+  {
+    type: 'feature',
+    emoji: '🎵',
+    title: 'TEMAS DIVERTIDOS',
+    desc: 'Musica, filme ou meme favorito! Cada participante sugere e o dono escolhe.',
+    bullets: ['Tema musical', 'Filmes marcantes', 'Memes do grupo'],
+    color: '#9B59B6',
+  },
+  {
+    type: 'feature',
+    emoji: '📸',
+    title: 'MURAL DE FOTOS',
+    desc: 'Um feed exclusivo do grupo! Compartilhe momentos com likes e comentarios.',
+    bullets: ['Feed estilo Instagram', 'Likes e comentarios', 'Memorias eternizadas'],
+    color: '#D4623A',
+  },
+  {
+    type: 'feature',
+    emoji: '❓',
+    title: 'QUIZ DO GRUPO',
+    desc: 'Quem conhece melhor os amigos? Perguntas divertidas com ranking.',
+    bullets: ['Perguntas personalizadas', 'Ranking tempo real', 'Competicao saudavel'],
+    color: '#F5A945',
+  },
+  {
+    type: 'feature',
+    emoji: '🏆',
+    title: 'RANKING DE PRESENTES',
+    desc: 'Apos a revelacao, todos votam nos melhores presentes!',
+    bullets: ['Mais criativo', 'Mais engracado', 'Acertou em cheio', 'Mais inesperado'],
+    color: '#6AAF52',
+  },
+];
+
 export function Post51NovaFeature({ preview = true }: Post51NovaFeatureProps) {
-  const color = '#7AB4E0';
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slide = slides[currentSlide];
+
+  const handleNext = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
+  const handlePrev = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <PostFrame size="square" preview={preview} showLogo>
-      {/* Background image with overlay */}
-      <div className="absolute inset-0">
-        <Image
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1080&h=1080&fit=crop"
-          alt=""
-          fill
-          className="object-cover"
-          style={{ filter: 'brightness(0.2)' }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(180deg, #0a1520ee 0%, #152535cc 50%, #0a1520ee 100%)',
-          }}
-        />
-      </div>
+      {/* Background */}
+      <div
+        className="absolute inset-0 transition-colors duration-500"
+        style={{
+          background: `linear-gradient(135deg, ${slide.color}20 0%, #0a1520 50%, ${slide.color}10 100%)`,
+        }}
+      />
 
       {/* Animated rays */}
-      {[...Array(16)].map((_, i) => (
+      {[...Array(8)].map((_, i) => (
         <div
           key={i}
-          className="absolute top-1/2 left-1/2 origin-left animate-pulse"
+          className="absolute top-1/2 left-1/2 origin-left"
           style={{
-            width: preview ? '200px' : '500px',
+            width: preview ? '150px' : '400px',
             height: '2px',
-            background: `linear-gradient(90deg, ${color}60 0%, transparent 100%)`,
-            transform: `translate(-50%, -50%) rotate(${i * 22.5}deg)`,
-            opacity: 0.4,
-            animationDelay: `${i * 0.1}s`,
+            background: `linear-gradient(90deg, ${slide.color}40 0%, transparent 100%)`,
+            transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
+            opacity: 0.3,
           }}
         />
       ))}
 
       {/* Glowing orb */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl animate-pulse"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
         style={{
-          width: preview ? '250px' : '600px',
-          height: preview ? '250px' : '600px',
-          background: `radial-gradient(circle, ${color}40 0%, transparent 60%)`,
+          width: preview ? '200px' : '500px',
+          height: preview ? '200px' : '500px',
+          background: `radial-gradient(circle, ${slide.color}30 0%, transparent 60%)`,
         }}
       />
 
-      {/* Floating emojis */}
-      {['✨', '🚀', '💡', '🎯', '⭐', '🔥'].map((emoji, i) => (
-        <div
-          key={i}
-          className="absolute animate-bounce"
-          style={{
-            top: `${10 + (i * 14)}%`,
-            left: `${8 + ((i * 17) % 80)}%`,
-            fontSize: preview ? '26px' : '65px',
-            opacity: 0.6,
-            animationDelay: `${i * 0.2}s`,
-            animationDuration: '2.5s',
-            filter: `drop-shadow(0 0 20px ${color}90)`,
-          }}
-        >
-          {emoji}
-        </div>
-      ))}
-
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-8 text-center">
-        {/* Coming soon badge */}
-        <div
-          className="mb-4 px-6 py-2 font-black text-white animate-pulse"
-          style={{
-            fontSize: preview ? '12px' : '28px',
-            background: `linear-gradient(135deg, ${color} 0%, #F5A945 100%)`,
-            boxShadow: `0 0 30px ${color}60`,
-          }}
-        >
-          EM BREVE
-        </div>
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+        {slide.type === 'cover' ? (
+          <>
+            {/* Cover slide */}
+            <div
+              className="mb-4 px-4 py-1 font-black text-white"
+              style={{
+                fontSize: preview ? '10px' : '24px',
+                background: `linear-gradient(135deg, ${slide.color} 0%, #F5A945 100%)`,
+              }}
+            >
+              NOVIDADES 2025
+            </div>
 
-        <div
-          className="mb-6 animate-bounce"
-          style={{
-            fontSize: preview ? '100px' : '260px',
-            filter: `drop-shadow(0 0 70px ${color}90) drop-shadow(0 0 140px ${color}50)`,
-            animationDuration: '2s',
-          }}
-        >
-          🚀
-        </div>
+            <div
+              style={{
+                fontSize: preview ? '80px' : '200px',
+                filter: `drop-shadow(0 0 50px ${slide.color}80)`,
+              }}
+            >
+              {slide.emoji}
+            </div>
 
-        <h1
-          className="font-bold text-white/70 leading-none"
-          style={{ fontSize: preview ? '20px' : '50px' }}
-        >
-          NOVA
-        </h1>
-        <h1
-          className="font-black leading-none mt-2"
-          style={{
-            fontSize: preview ? '48px' : '120px',
-            background: `linear-gradient(135deg, ${color} 0%, #F5A945 100%)`,
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            filter: `drop-shadow(0 0 40px ${color}60)`,
-          }}
-        >
-          FEATURE!
-        </h1>
+            <h1
+              className="font-black text-white/70 leading-none mt-2"
+              style={{ fontSize: preview ? '36px' : '90px' }}
+            >
+              {slide.title}
+            </h1>
+            <h1
+              className="font-black leading-none"
+              style={{
+                fontSize: preview ? '48px' : '120px',
+                background: `linear-gradient(135deg, ${slide.color} 0%, #F5A945 100%)`,
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
+              {slide.subtitle}
+            </h1>
 
-        <p
-          className="text-white/70 mt-4 font-medium max-w-xs"
-          style={{ fontSize: preview ? '13px' : '30px' }}
-        >
-          Algo incrível está chegando...
-        </p>
+            <p
+              className="text-white/60 mt-4 font-medium"
+              style={{ fontSize: preview ? '12px' : '28px' }}
+            >
+              {slide.desc}
+            </p>
 
-        <div
-          className="mt-6 px-6 py-4 bg-white/10 backdrop-blur border border-white/20"
-          style={{ padding: preview ? '16px 24px' : '32px 48px' }}
-        >
-          <p
-            className="text-white font-medium"
-            style={{ fontSize: preview ? '12px' : '28px' }}
-          >
-            🔔 Ative as notificações para não perder!
-          </p>
-        </div>
+            <div
+              className="mt-6 px-6 py-2 bg-white/10 backdrop-blur border border-white/20 text-white font-bold"
+              style={{ fontSize: preview ? '10px' : '24px' }}
+            >
+              Deslize para conhecer →
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Feature slides */}
+            <div
+              className="mb-2 px-3 py-1 font-bold text-white"
+              style={{
+                fontSize: preview ? '9px' : '22px',
+                background: slide.color,
+              }}
+            >
+              NOVO
+            </div>
 
-        <div
-          className="mt-4 px-4 py-2 bg-white/10 backdrop-blur border border-white/20 font-bold text-white"
-          style={{
-            fontSize: preview ? '10px' : '24px',
-            padding: preview ? '8px 16px' : '14px 32px',
-          }}
-        >
-          https://oamigosecreto.app
-        </div>
+            <div
+              style={{
+                fontSize: preview ? '60px' : '150px',
+                filter: `drop-shadow(0 0 40px ${slide.color}70)`,
+              }}
+            >
+              {slide.emoji}
+            </div>
 
-        <div
-          className="mt-4 px-8 py-3 bg-white font-black animate-pulse"
-          style={{
-            fontSize: preview ? '12px' : '28px',
-            padding: preview ? '12px 28px' : '24px 56px',
-            color: color,
-            boxShadow: '0 0 50px rgba(255,255,255,0.5)',
-          }}
-        >
-          Fique ligado! 👀
-        </div>
+            <h2
+              className="font-black leading-none mt-2"
+              style={{
+                fontSize: preview ? '24px' : '60px',
+                color: slide.color,
+                textShadow: `0 0 30px ${slide.color}50`,
+              }}
+            >
+              {slide.title}
+            </h2>
 
-        {/* Unsplash credit */}
-        <div
-          className="absolute bottom-2 right-2 text-white/30"
-          style={{ fontSize: preview ? '8px' : '18px' }}
-        >
-          📷 Unsplash
-        </div>
+            <p
+              className="text-white/80 mt-3 font-medium max-w-sm"
+              style={{ fontSize: preview ? '11px' : '26px' }}
+            >
+              {slide.desc}
+            </p>
+
+            <div className="mt-4 space-y-1">
+              {slide.bullets?.map((bullet, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-2 justify-center"
+                  style={{ fontSize: preview ? '10px' : '24px' }}
+                >
+                  <div
+                    className="w-2 h-2 rounded-full"
+                    style={{ background: slide.color, width: preview ? '6px' : '14px', height: preview ? '6px' : '14px' }}
+                  />
+                  <span className="text-white/70">{bullet}</span>
+                </div>
+              ))}
+            </div>
+
+            {currentSlide === slides.length - 1 && (
+              <div
+                className="mt-6 px-6 py-3 bg-white font-black"
+                style={{
+                  fontSize: preview ? '11px' : '26px',
+                  color: slide.color,
+                }}
+              >
+                Baixe agora! Link na bio 👆
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* Navigation arrows (visible in preview for UX) */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-colors z-20"
+        style={{ width: preview ? '24px' : '50px', height: preview ? '24px' : '50px', fontSize: preview ? '12px' : '24px' }}
+      >
+        ←
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-colors z-20"
+        style={{ width: preview ? '24px' : '50px', height: preview ? '24px' : '50px', fontSize: preview ? '12px' : '24px' }}
+      >
+        →
+      </button>
+
+      {/* Slide indicator */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1 z-20">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentSlide(i)}
+            className="rounded-full transition-all"
+            style={{
+              width: i === currentSlide ? (preview ? '16px' : '40px') : (preview ? '6px' : '14px'),
+              height: preview ? '6px' : '14px',
+              background: i === currentSlide ? slides[i].color : 'rgba(255,255,255,0.3)',
+            }}
+          />
+        ))}
       </div>
     </PostFrame>
   );

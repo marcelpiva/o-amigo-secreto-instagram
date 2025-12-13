@@ -40,14 +40,14 @@ export const posts: PostData[] = [
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Cansado de sorteios problematicos?' },
+      { id: 1, content: 'Cansado dé sórteios problemáticos?' },
       { id: 2, content: 'Casal que tira casal.', subContent: 'Mesma pessoa do ano passado.' },
-      { id: 3, content: 'A solucao chega em 3 dias...' },
+      { id: 3, content: 'A solução chega em 3 dias...' },
     ],
     date: '10/12/2025',
     time: '19h',
     boost: null,
-    caption: 'Algo novo esta chegando...',
+    caption: 'Algo novo está chegando...',
     cta: 'Link na bio para waitlist',
     hashtags: ['#AmigoSecreto', '#Natal2025', '#EmBreve'],
     category: 'teaser',
@@ -63,14 +63,14 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: '5 problemas que arruinam seu Amigo Secreto' },
       { id: 2, content: '1. Casal tira casal - de novo' },
-      { id: 3, content: '2. Voce tira a mesma pessoa do ano passado' },
-      { id: 4, content: '3. Ninguem sabe o que a pessoa quer' },
-      { id: 5, content: '4. Alguem sempre descobre antes da hora', subContent: 'E se existisse uma solucao?' },
+      { id: 3, content: '2. Você tira a mesma pessoa do ano passado' },
+      { id: 4, content: '3. Ninguém sabe o que a pessoa quer' },
+      { id: 5, content: '4. Alguém sempre descobre antes da hora', subContent: 'E se existisse uma solução?' },
     ],
     date: '11/12/2025',
     time: '12h',
     boost: 100,
-    caption: 'Todo ano a mesma historia: sorteio problematico, presentes errados, segredo vazado. E se existisse uma forma inteligente de resolver TODOS esses problemas?',
+    caption: 'Todo ano a mesma história: sorteio problematico, presentes errados, segredo vazado. E se existisse uma forma inteligente de resolver TODOS esses problemas?',
     cta: 'Quer saber primeiro? Link na bio',
     hashtags: ['#AmigoSecreto', '#NatalEmFamilia', '#Confraternizacao', '#ProblemasDeNatal', '#DicasDeNatal'],
     category: 'teaser',
@@ -79,14 +79,14 @@ export const posts: PostData[] = [
   },
   {
     id: 3,
-    slug: 'revelacao-marca',
-    title: 'Revelacao da Marca',
+    slug: 'revelação-marca',
+    title: 'Revelação da Marca',
     type: 'reels',
     format: 'story',
     slides: [
       { id: 1, content: 'O problema...' },
-      { id: 2, content: 'A solucao...' },
-      { id: 3, content: 'O Amigo Secreto', subContent: 'Seu amigo secreto, sem complicacao' },
+      { id: 2, content: 'A solução...' },
+      { id: 3, content: 'O Amigo Secreto', subContent: 'Seu amigo secreto, sem complicação' },
     ],
     date: '12/12/2025',
     time: '18h',
@@ -102,16 +102,16 @@ export const posts: PostData[] = [
   // SEMANA 2: LANCAMENTO (14-18 DEZ)
   {
     id: 4,
-    slug: 'lancamento',
+    slug: 'lançamento',
     title: 'Lancamento Oficial',
     type: 'static',
     format: 'square',
     date: '14/12/2025',
     time: '10h',
     boost: 200,
-    caption: 'O momento chegou! O Amigo Secreto esta DISPONIVEL para download.',
+    caption: 'O momento chegou! O Amigo Secreto está DISPONIVEL para download.',
     cta: 'Baixe agora - Link na bio',
-    hashtags: ['#OAmigoSecreto', '#DownloadAgora', '#AppGratis', '#Natal2025'],
+    hashtags: ['#OAmigoSecreto', '#DownloadAgora', '#AppGrátis', '#Natal2025'],
     category: 'launch',
     month: 'dezembro',
     status: 'draft',
@@ -119,21 +119,33 @@ export const posts: PostData[] = [
   {
     id: 5,
     slug: 'feature-algoritmo',
-    title: 'Feature: Algoritmo Inteligente',
+    title: 'Feature: Sorteio Inteligente + Democratico',
     type: 'carousel',
     format: 'square',
     slides: [
-      { id: 1, content: 'Nosso sorteio e INTELIGENTE' },
-      { id: 2, content: 'Define restricoes:', subContent: 'Maria nao pode tirar Joao (sao casados)' },
+      { id: 1, content: 'Nosso sorteio é INTELIGENTE' },
+      { id: 2, content: 'Define restrições:', subContent: 'Marianão pode tirar Joao (sao casados)' },
       { id: 3, content: 'O algoritmo calcula TODAS as possibilidades' },
       { id: 4, content: 'Resultado: sorteio perfeito que respeita TODAS as regras' },
+      { id: 5, content: 'NOVO: SORTEIO DEMOCRATICO!', subContent: 'O grupo vota para aprovar!' },
     ],
     date: '15/12/2025',
     time: '19h',
     boost: null,
-    caption: 'Chega de sorteio manual com papelzinho. Nosso algoritmo anti-ciclos garante sorteio perfeito!',
-    cta: 'Experimente gratis - Link na bio',
-    hashtags: ['#AmigoSecreto', '#SorteioInteligente', '#Tecnologia', '#AlgoritmoInteligente'],
+    caption: `Chega dé sórteio manual com papelzinho! 🧠
+
+Nosso algoritmo anti-ciclos garanté sórteio perfeito:
+✅ Casaisnão tiram um ao outro
+✅ Ninguém repete o ano anterior
+✅ Restricoes personalizadas
+
+🆕 NOVO: Sorteio Democratico!
+Agora o grupo pode VOTAR para aprovar o sorteio.
+Até 3 rodadas até o consenso!
+
+"Sorteio que todo mundo aprova!" 🗳️`,
+    cta: 'Experimente grátis - Link na bio',
+    hashtags: ['#AmigoSecreto', '#SorteioInteligente', '#SorteioDemocratico', '#Tecnologia', '#AlgoritmoInteligente', '#Votacao'],
     category: 'feature',
     month: 'dezembro',
     status: 'draft',
@@ -148,7 +160,7 @@ export const posts: PostData[] = [
       { id: 1, content: 'Nunca mais erre o presente' },
       { id: 2, content: 'Cada participante cria sua lista' },
       { id: 3, content: 'Veja sugestoes de onde comprar' },
-      { id: 4, content: 'Precos de varios marketplaces' },
+      { id: 4, content: 'Preços de varios marketplaces' },
     ],
     date: '16/12/2025',
     time: '12h',
@@ -190,7 +202,7 @@ export const posts: PostData[] = [
     date: '18/12/2025',
     time: '12h',
     boost: null,
-    caption: 'Um app, todos os seus grupos. Familia. Trabalho. Amigos. Quantos voce quiser. E GRATIS.',
+    caption: 'Um app, todos os seus grupos. Familia. Trabalho. Amigos. Quantos você quiser. E GRATIS.',
     cta: 'Crie seus grupos - Link na bio',
     hashtags: ['#GruposIlimitados', '#Familia', '#Trabalho', '#Amigos', '#AmigoSecreto'],
     category: 'feature',
@@ -201,8 +213,8 @@ export const posts: PostData[] = [
   // SEMANA 3: SOCIAL PROOF (19-23 DEZ)
   {
     id: 9,
-    slug: 'tutorial-rapido',
-    title: 'Tutorial Rapido',
+    slug: 'tutorial-rápido',
+    title: 'Tutorial Rápido',
     type: 'reels',
     format: 'story',
     slides: [
@@ -210,7 +222,7 @@ export const posts: PostData[] = [
       { id: 2, content: '1. Baixe o app' },
       { id: 3, content: '2. Crie um grupo' },
       { id: 4, content: '3. Convide por link ou QR code' },
-      { id: 5, content: '4. Defina restricoes' },
+      { id: 5, content: '4. Defina restrições' },
       { id: 6, content: '5. Clique em sortear' },
       { id: 7, content: 'Pronto! Cada um ve apenas seu sorteado' },
     ],
@@ -231,14 +243,14 @@ export const posts: PostData[] = [
     type: 'carousel',
     format: 'square',
     slides: [
-      { id: 1, content: '"Finalmente minha sogra nao tirou meu sogro!"', subContent: '- Ana, 34' },
+      { id: 1, content: '"Finalmente minha sogranão tirou meu sogro!"', subContent: '- Ana, 34' },
       { id: 2, content: '"Usei pro amigo secreto da empresa com 50 pessoas!"', subContent: '- Carlos, RH' },
       { id: 3, content: '"A wishlist salvou minha vida!"', subContent: '- Mariana, 28' },
     ],
     date: '20/12/2025',
     time: '10h',
     boost: null,
-    caption: 'O que estao falando sobre O Amigo Secreto.',
+    caption: 'O que estão falando sobre O Amigo Secreto.',
     cta: 'Junte-se a eles - Link na bio',
     hashtags: ['#Depoimentos', '#AvaliacaoDeUsuarios', '#AmigoSecreto', '#AppAprovado', '#5Estrelas'],
     category: 'social-proof',
@@ -254,9 +266,9 @@ export const posts: PostData[] = [
     date: '21/12/2025',
     time: '12h',
     boost: 100,
-    caption: 'Calma, ainda da tempo! Organize tudo em 2 minutos.',
+    caption: 'Calma, aínda da tempo! Organize tudo em 2 minutos.',
     cta: 'Baixe agora - Link na bio',
-    hashtags: ['#Natal2025', '#UltimaHora', '#AindaDaTempo', '#AmigoSecreto', '#Countdown'],
+    hashtags: ['#Natal2025', '#ÚltimaHora', '#AindaDaTempo', '#AmigoSecreto', '#Countdown'],
     category: 'seasonal',
     month: 'dezembro',
     status: 'draft',
@@ -268,17 +280,17 @@ export const posts: PostData[] = [
     type: 'carousel',
     format: 'square',
     slides: [
-      { id: 1, content: 'ATENCAO RH:', subContent: 'Amigo Secreto da empresa nunca foi tao facil' },
+      { id: 1, content: 'ATENCAO RH:', subContent: 'Amigo Secreto da empresa nunca foi tão fácil' },
       { id: 2, content: '10, 50, 100+ participantes.', subContent: 'O algoritmo da conta.' },
-      { id: 3, content: 'Restricoes por departamento.', subContent: 'Ninguem tira o proprio chefe.' },
-      { id: 4, content: 'Gratis. Sem limite de grupos. Sem limite de participantes.' },
+      { id: 3, content: 'Restricoes por departamento.', subContent: 'Ninguém tira o próprio chefe.' },
+      { id: 4, content: 'Grátis. Sem limite de grupos. Sem limite de participantes.' },
     ],
     date: '22/12/2025',
     time: '10h',
     boost: 100,
-    caption: 'Para RH e organizadores de confraternizacao.',
+    caption: 'Para RH e organizadores de confraternização.',
     cta: 'Marque seu RH! Link na bio para testar',
-    hashtags: ['#RH', '#RecursosHumanos', '#Confraternizacao', '#B2B', '#GestaoDepessoas'],
+    hashtags: ['#RH', '#RecursosHumanos', '#Confraternizacao', '#B2B', '#GestãoDepessoas'],
     category: 'b2b',
     month: 'dezembro',
     status: 'draft',
@@ -293,7 +305,7 @@ export const posts: PostData[] = [
     format: 'story',
     slides: [
       { id: 1, content: 'Feliz Natal!', subContent: 'Que seu Amigo Secreto seja perfeito' },
-      { id: 2, content: 'Com ou sem o app...', subContent: 'Mas com o app e melhor' },
+      { id: 2, content: 'Com ou sem o app...', subContent: 'Mas com o app é melhor' },
     ],
     date: '24/12/2025',
     time: '09h',
@@ -314,7 +326,7 @@ export const posts: PostData[] = [
     date: '26/12/2025',
     time: '18h',
     boost: null,
-    caption: 'O Amigo Secreto funciona o ano todo! Ja deixa o grupo criado pro proximo encontro.',
+    caption: 'O Amigo Secreto funciona o ano todo! Já deixa o grupo criado pro próximo encontro.',
     cta: 'Crie seu grupo - Link na bio',
     hashtags: ['#AnoNovo2026', '#Reveillon', '#Confraternizacao', '#AmigoSecreto'],
     category: 'seasonal',
@@ -330,7 +342,7 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: 'OBRIGADO!' },
       { id: 2, content: 'X downloads', subContent: 'X grupos criados' },
-      { id: 3, content: 'Em 2026, ainda mais novidades.', subContent: 'Fique ligado!' },
+      { id: 3, content: 'Em 2026, aínda mais novidades.', subContent: 'Fique ligado!' },
     ],
     date: '27/12/2025',
     time: '12h',
@@ -349,16 +361,16 @@ export const posts: PostData[] = [
     type: 'carousel',
     format: 'square',
     slides: [
-      { id: 1, content: 'Nao e so no Natal!', subContent: 'O Amigo Secreto funciona o ano todo' },
+      { id: 1, content: 'Não é só no Natal!', subContent: 'O Amigo Secreto funciona o ano todo' },
       { id: 2, content: 'Amigo Secreto', subContent: 'Dezembro' },
       { id: 3, content: 'Amigo Chocolate', subContent: 'Marco/Abril - Pascoa' },
       { id: 4, content: 'Amigo Caipira', subContent: 'Junho - Festa Junina' },
-      { id: 5, content: 'Amigo Crianca', subContent: 'Outubro - Dia das Criancas' },
+      { id: 5, content: 'Amigo Crianca', subContent: 'Outubro - Dia das Crianças' },
     ],
     date: '28/12/2025',
     time: '12h',
     boost: null,
-    caption: 'O Amigo Secreto nao e so pro Natal! Use o app em diversas ocasioes ao longo do ano.',
+    caption: 'O Amigo Secretonão é só pro Natal! Use o app em diversas ocasioes ao longo do ano.',
     cta: 'Baixe o app - Link na bio',
     hashtags: ['#AmigoSecreto', '#AmigoChocolate', '#AmigoCaipira', '#AmigoCrianca', '#OAnoTodo'],
     category: 'seasonal',
@@ -377,8 +389,8 @@ export const posts: PostData[] = [
     format: 'story',
     slides: [
       { id: 1, content: '2026 chegou!' },
-      { id: 2, content: 'Obrigado por fazer parte da nossa historia' },
-      { id: 3, content: 'Vem novidades por ai...' },
+      { id: 2, content: 'Obrigado por fazer parte da nossa história' },
+      { id: 3, content: 'Vem novidades por aí...' },
     ],
     date: '01/01/2026',
     time: '10h',
@@ -392,8 +404,8 @@ export const posts: PostData[] = [
   },
   {
     id: 18,
-    slug: 'numeros-dezembro',
-    title: 'Numeros de Dezembro',
+    slug: 'números-dezembro',
+    title: 'Números de Dezembro',
     type: 'carousel',
     format: 'square',
     slides: [
@@ -406,9 +418,9 @@ export const posts: PostData[] = [
     date: '02/01/2026',
     time: '12h',
     boost: 50,
-    caption: 'Ainda estamos em choque! Em menos de um mes voces fizeram historia com O Amigo Secreto.',
+    caption: 'Ainda estamos em choque! Em menos de um mês vocês fizeram história com O Amigo Secreto.',
     cta: 'Baixe o app - Link na bio',
-    hashtags: ['#OAmigoSecreto', '#Retrospectiva2025', '#Numeros', '#Sucesso', '#Obrigado'],
+    hashtags: ['#OAmigoSecreto', '#Retrospectiva2025', '#Números', '#Sucesso', '#Obrigado'],
     category: 'social-proof',
     month: 'janeiro',
     status: 'draft',
@@ -422,13 +434,13 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: 'Melhores Momentos 2025' },
       { id: 2, content: 'Lancamento do app' },
-      { id: 3, content: 'Primeiros usuarios' },
-      { id: 4, content: 'Reviews incriveis' },
+      { id: 3, content: 'Primeiros usuários' },
+      { id: 4, content: 'Reviews incríveis' },
     ],
     date: '04/01/2026',
     time: '18h',
     boost: null,
-    caption: 'Uma retrospectiva dos melhores momentos do lancamento!',
+    caption: 'Uma retrospectiva dos melhores momentos do lançamento!',
     cta: 'Faca parte em 2026 - Link na bio',
     hashtags: ['#Retrospectiva', '#MelhoresMomentos', '#OAmigoSecreto', '#2025'],
     category: 'branding',
@@ -444,7 +456,7 @@ export const posts: PostData[] = [
     date: '06/01/2026',
     time: '12h',
     boost: 50,
-    caption: 'Nao conseguiu se reunir no Natal? Tranquilo! O Amigo Secreto funciona o ANO TODO.',
+    caption: 'Não conseguiu se reunir no Natal? Tranquilo! O Amigo Secreto funciona o ANO TODO.',
     cta: 'Crie seu grupo agora - Link na bio',
     hashtags: ['#AmigoOculto', '#AnoNovo2026', '#Reveillon', '#Confraternizacao', '#OAmigoSecreto'],
     category: 'seasonal',
@@ -459,17 +471,31 @@ export const posts: PostData[] = [
     format: 'square',
     slides: [
       { id: 1, content: 'CONQUISTE BADGES!' },
-      { id: 2, content: 'Anfitriao Mestre', subContent: 'Criou 3+ grupos' },
+      { id: 2, content: 'Anfitrião Mestre', subContent: 'Criou 3+ grupos' },
       { id: 3, content: 'Enviador de Dicas', subContent: 'Mandou 10+ hints' },
       { id: 4, content: 'Rei do Chat', subContent: '100+ mensagens' },
       { id: 5, content: 'Mestre do Sorteio', subContent: 'Participou de 5+ sorteios' },
+      { id: 6, content: 'Mestre do Quiz', subContent: 'Acertou 10+ perguntas' },
+      { id: 7, content: 'Presente Top', subContent: 'Venceu o Ranking!' },
     ],
     date: '08/01/2026',
     time: '19h',
     boost: null,
-    caption: 'Voce sabia que O Amigo Secreto tem um sistema de CONQUISTAS?',
+    caption: `Você sabia que O Amigo Secreto tem um sistema de CONQUISTAS? 🏆
+
+Desbloqueie badges especiais:
+🎯 Anfitrião Mestre - Criou 3+ grupos
+💡 Enviador de Dicas - Mandou 10+ hints
+💬 Rei do Chat - 100+ mensagens
+🎲 Mestre do Sorteio - 5+ sorteios
+
+🆕 NOVOS BADGES:
+🧠 Mestre do Quiz - Acertou 10+ perguntas
+🥇 Presente Top - Venceu o Ranking de Presentes!
+
+Quantos você já tem? 👇`,
     cta: 'Desbloqueie suas badges - Link na bio',
-    hashtags: ['#Badges', '#Gamificacao', '#OAmigoSecreto', '#Conquistas', '#AppGratis'],
+    hashtags: ['#Badges', '#Gamificacao', '#OAmigoSecreto', '#Conquistas', '#AppGrátis', '#QuizDoGrupo', '#RankingDePresentes'],
     category: 'feature',
     month: 'janeiro',
     status: 'draft',
@@ -477,11 +503,11 @@ export const posts: PostData[] = [
   {
     id: 22,
     slug: 'poll-badges',
-    title: 'Poll: Qual badge voce conquistou?',
+    title: 'Poll: Qual badge você conquistou?',
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Qual badge voce ja conquistou?' },
+      { id: 1, content: 'Qual badge você já conquistou?' },
       { id: 2, content: 'Vote aqui!' },
     ],
     date: '10/01/2026',
@@ -510,7 +536,7 @@ export const posts: PostData[] = [
     date: '13/01/2026',
     time: '10h',
     boost: 50,
-    caption: 'Depoimentos REAIS de usuarios do Natal 2025.',
+    caption: 'Depoimentos REAIS de usuários do Natal 2025.',
     cta: 'Baixe e faca parte - Link na bio',
     hashtags: ['#Depoimentos', '#Reviews', '#5Estrelas', '#OAmigoSecreto', '#Recomendo'],
     category: 'social-proof',
@@ -524,15 +550,15 @@ export const posts: PostData[] = [
     type: 'reels',
     format: 'story',
     slides: [
-      { id: 1, content: 'Voce sabia que pode conversar com seu amigo secreto?' },
-      { id: 2, content: 'SEM revelar quem voce e!' },
-      { id: 3, content: 'Demonstracao do chat' },
+      { id: 1, content: 'Você sabia que pode conversar com seu amigo secreto?' },
+      { id: 2, content: 'SEM revelar quem você e!' },
+      { id: 3, content: 'Demonstração do chat' },
       { id: 4, content: 'CTA' },
     ],
     date: '15/01/2026',
     time: '18h',
     boost: null,
-    caption: 'Tutorial: Como usar o chat anonimo do app.',
+    caption: 'Tutorial: Como usar o chat anônimo do app.',
     cta: 'Experimente - Link na bio',
     hashtags: ['#Tutorial', '#ChatAnonimo', '#OAmigoSecreto', '#Dica'],
     category: 'feature',
@@ -546,13 +572,13 @@ export const posts: PostData[] = [
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Tem duvidas sobre o app?' },
+      { id: 1, content: 'Tem dúvidas sobre o app?' },
       { id: 2, content: 'Manda aqui!' },
     ],
     date: '17/01/2026',
     time: '12h',
     boost: null,
-    caption: 'Responderemos todas as duvidas!',
+    caption: 'Responderemos todas as dúvidas!',
     cta: '',
     hashtags: ['#QeA', '#Duvidas', '#OAmigoSecreto'],
     category: 'engagement',
@@ -567,10 +593,10 @@ export const posts: PostData[] = [
     format: 'square',
     slides: [
       { id: 1, content: 'SISTEMA DE DICAS' },
-      { id: 2, content: 'De dicas anonimas sobre voce' },
+      { id: 2, content: 'De dicas anônimas sobre você' },
       { id: 3, content: 'Receba dicas do seu amigo secreto' },
-      { id: 4, content: 'Crie expectativa ate a revelacao' },
-      { id: 5, content: 'A diversao dura o mes inteiro!' },
+      { id: 4, content: 'Crie expectativa até a revelação' },
+      { id: 5, content: 'A diversão dura o mês inteiro!' },
     ],
     date: '20/01/2026',
     time: '12h',
@@ -605,15 +631,29 @@ export const posts: PostData[] = [
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Qual feature voce mais usa?' },
-      { id: 2, content: 'Chat? Wishlist? Badges?' },
+      { id: 1, content: 'Qual feature você mais usa?' },
+      { id: 2, content: 'Sorteio, Chat, Wishlist...' },
+      { id: 3, content: '5 NOVAS features!', subContent: 'Quiz, Mural, Ranking...' },
     ],
     date: '24/01/2026',
     time: '12h',
     boost: null,
-    caption: 'Conta pra gente!',
+    caption: `Qual feature você mais usa? 📊
+
+Temos TANTAS opções agora:
+
+🎲 Sorteio inteligente
+🗳️ Sorteio Democratico (NOVO!)
+💬 Chat anônimo
+📝 Wishlist
+🎵 Temas Divertidos (NOVO!)
+📸 Mural de Fotos (NOVO!)
+❓ Quiz do Grupo (NOVO!)
+🏆 Ranking de Presentes (NOVO!)
+
+Vote nos stories! 👆`,
     cta: '',
-    hashtags: ['#Enquete', '#Features', '#OAmigoSecreto'],
+    hashtags: ['#Enquete', '#Features', '#OAmigoSecreto', '#NovasFeatures', '#QuizDoGrupo', '#MuralDeFotos', '#SorteioDemocratico'],
     category: 'engagement',
     month: 'janeiro',
     status: 'draft',
@@ -625,14 +665,14 @@ export const posts: PostData[] = [
     type: 'reels',
     format: 'story',
     slides: [
-      { id: 1, content: 'POV: Voce abre o app...' },
+      { id: 1, content: 'POV: Você abre o app...' },
       { id: 2, content: 'E descobre quem te tirou...' },
       { id: 3, content: 'Reacao!' },
     ],
     date: '26/01/2026',
     time: '18h',
     boost: null,
-    caption: 'Quem ja teve essa reacao? Marca nos comentarios!',
+    caption: 'Quem já teve essa reacao? Marca nos comentarios!',
     cta: 'Baixe o app - Link na bio',
     hashtags: ['#POV', '#AmigoSecreto', '#Reacao', '#Viral', '#OAmigoSecreto'],
     category: 'engagement',
@@ -647,14 +687,14 @@ export const posts: PostData[] = [
     format: 'square',
     slides: [
       { id: 1, content: 'JANEIRO EM REVIEW' },
-      { id: 2, content: 'Novos usuarios' },
+      { id: 2, content: 'Novos usuários' },
       { id: 3, content: 'Novos grupos' },
-      { id: 4, content: 'Fevereiro vem ai!' },
+      { id: 4, content: 'Fevereiro vem aí!' },
     ],
     date: '29/01/2026',
     time: '12h',
     boost: null,
-    caption: 'Obrigado por mais um mes incrivel!',
+    caption: 'Obrigado por mais um mês incrível!',
     cta: 'Siga para novidades!',
     hashtags: ['#JaneiroEmReview', '#OAmigoSecreto', '#Retrospectiva'],
     category: 'branding',
@@ -672,13 +712,13 @@ export const posts: PostData[] = [
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Carnaval vem ai...' },
+      { id: 1, content: 'Carnaval vem aí...' },
       { id: 2, content: 'E a gente tem uma ideia!' },
     ],
     date: '01/02/2026',
     time: '12h',
     boost: null,
-    caption: 'Carnaval vem ai! Fique ligado.',
+    caption: 'Carnaval vem aí! Fique ligado.',
     cta: '',
     hashtags: ['#Carnaval2026', '#OAmigoSecreto', '#EmBreve'],
     category: 'teaser',
@@ -694,7 +734,7 @@ export const posts: PostData[] = [
     date: '02/02/2026',
     time: '10h',
     boost: 75,
-    caption: 'AMIGO FOLIA! Quem disse que amigo secreto e so no Natal? No Carnaval, organize um amigo secreto tematico!',
+    caption: 'AMIGO FOLIA! Quem disse que amigo secreto é só no Natal? No Carnaval, organize um amigo secreto tematico!',
     cta: 'Crie seu grupo - Link na bio',
     hashtags: ['#AmigoFolia', '#Carnaval2026', '#BlocoDeRua', '#AmigoSecreto', '#Folia'],
     category: 'seasonal',
@@ -710,7 +750,7 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: '5 IDEIAS DE PRESENTE DE CARNAVAL' },
       { id: 2, content: 'Fantasia criativa' },
-      { id: 3, content: 'Kit de sobrevivencia', subContent: 'protetor, agua, glitter' },
+      { id: 3, content: 'Kit dé sóbrevivencia', subContent: 'protetor, água, glitter' },
       { id: 4, content: 'Acessorios de bloco' },
       { id: 5, content: 'Playlist personalizada' },
     ],
@@ -732,7 +772,7 @@ export const posts: PostData[] = [
     format: 'story',
     slides: [
       { id: 1, content: 'Vai pular carnaval?' },
-      { id: 2, content: 'Sim / Nao / Talvez' },
+      { id: 2, content: 'Sim / Não / Talvez' },
     ],
     date: '06/02/2026',
     time: '12h',
@@ -753,16 +793,29 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: 'TEAM BUILDING diferente' },
       { id: 2, content: 'Amigo secreto fora do Natal? SIM!' },
-      { id: 3, content: 'Promove integracao entre equipes' },
-      { id: 4, content: 'Funciona com qualquer tamanho de equipe' },
-      { id: 5, content: '100% gratis para empresas' },
+      { id: 3, content: 'Promove integração entre equipes' },
+      { id: 4, content: 'Quiz do Grupo: Quebra-gelo perfeito!', subContent: '"Quem tem medo de barata?"' },
+      { id: 5, content: 'Mural de Fotos: Memorias da equipe' },
+      { id: 6, content: '100% grátis para empresas' },
     ],
     date: '09/02/2026',
     time: '10h',
     boost: 75,
-    caption: 'RH, essa e pra voces! Use amigo secreto como ferramenta de Team Building.',
+    caption: `🏢 TEAM BUILDING COM O AMIGO SECRETO 🏢
+
+RH, essa é pra vocês!
+
+Organize confraternizacoes COMPLETAS:
+✅ Grupos de 10 a 500 pessoas
+✅ Sorteio com restrições por setor
+✅ 🆕 QUIZ DO GRUPO - Integracao divertida!
+✅ 🆕 MURAL DE FOTOS - Memorias da equipe
+✅ 🆕 RANKING - Premie o melhor presente!
+✅ 100% gratuito (serio!)
+
+"Quem tem medo de barata?" - Quiz perfeito pra quebrar o gelo! 😂`,
     cta: 'Marque seu RH - Link na bio',
-    hashtags: ['#TeamBuilding', '#RH', '#GestaoDepessoas', '#RecursosHumanos', '#Empresas'],
+    hashtags: ['#TeamBuilding', '#RH', '#GestãoDepessoas', '#RecursosHumanos', '#Empresas', '#QuizDoGrupo', '#MuralDeFotos', '#Confraternizacao'],
     category: 'b2b',
     month: 'fevereiro',
     status: 'draft',
@@ -776,12 +829,12 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: 'Case de sucesso' },
       { id: 2, content: 'Empresa X usou o app' },
-      { id: 3, content: 'Resultado incrivel' },
+      { id: 3, content: 'Resultado incrível' },
     ],
     date: '11/02/2026',
     time: '18h',
     boost: null,
-    caption: 'Veja como empresas estao usando O Amigo Secreto!',
+    caption: 'Veja como empresas estão usando O Amigo Secreto!',
     cta: 'Experimente na sua empresa - Link na bio',
     hashtags: ['#CaseDeSucesso', '#B2B', '#OAmigoSecreto', '#Empresas'],
     category: 'b2b',
@@ -791,12 +844,12 @@ export const posts: PostData[] = [
   {
     id: 37,
     slug: 'guia-rh',
-    title: 'Para RH: Guia de confraternizacao',
+    title: 'Para RH: Guia de confraternização',
     type: 'story',
     format: 'story',
     slides: [
       { id: 1, content: 'Guia para RH' },
-      { id: 2, content: 'Como organizar confraternizacao' },
+      { id: 2, content: 'Como organizar confraternização' },
       { id: 3, content: 'Link para download' },
     ],
     date: '13/02/2026',
@@ -818,7 +871,7 @@ export const posts: PostData[] = [
     date: '14/02/2026',
     time: '10h',
     boost: null,
-    caption: 'Hoje e Dia dos NAMORADOS... mas tambem e dia de celebrar a AMIZADE! Amigos sao a familia que escolhemos.',
+    caption: 'Hoje é Dia dos NAMORADOS... mas também e dia de celebrar a AMIZADE! Amigos são a familia que escolhemos.',
     cta: 'Crie um grupo com seus amigos - Link na bio',
     hashtags: ['#DiadosAmigos', '#Amizade', '#BFF', '#AmigoSecreto', '#Celebracao'],
     category: 'seasonal',
@@ -827,7 +880,7 @@ export const posts: PostData[] = [
   },
   {
     id: 39,
-    slug: 'revelacoes-carnaval',
+    slug: 'revelações-carnaval',
     title: 'Compilacao: Revelacoes de Carnaval',
     type: 'reels',
     format: 'story',
@@ -839,8 +892,8 @@ export const posts: PostData[] = [
     time: '18h',
     boost: null,
     caption: 'Os melhores momentos do Amigo Folia!',
-    cta: 'Marque a gente nas suas revelacoes!',
-    hashtags: ['#AmigoFolia', '#Carnaval2026', '#Revelacao', '#OAmigoSecreto'],
+    cta: 'Marque a gente nas suas revelações!',
+    hashtags: ['#AmigoFolia', '#Carnaval2026', '#Revelação', '#OAmigoSecreto'],
     category: 'ugc',
     month: 'fevereiro',
     status: 'draft',
@@ -881,7 +934,7 @@ export const posts: PostData[] = [
     time: '10h',
     boost: null,
     caption: 'Os melhores momentos do Carnaval 2026!',
-    cta: 'Marque quem pulou carnaval com voce!',
+    cta: 'Marque quem pulou carnaval com você!',
     hashtags: ['#Carnaval2026', '#MelhoresMomentos', '#OAmigoSecreto'],
     category: 'branding',
     month: 'fevereiro',
@@ -896,7 +949,7 @@ export const posts: PostData[] = [
     date: '25/02/2026',
     time: '12h',
     boost: null,
-    caption: 'Carnaval acabou, mas a diversao continua! Crie grupos para proximas celebracoes.',
+    caption: 'Carnaval acabou, mas a diversão continua! Crie grupos para próximas celebrações.',
     cta: 'Link na bio',
     hashtags: ['#VoltaARotina', '#PosCarnaval', '#OAmigoSecreto'],
     category: 'seasonal',
@@ -906,17 +959,17 @@ export const posts: PostData[] = [
   {
     id: 43,
     slug: 'teaser-pascoa',
-    title: 'Teaser: Pascoa vem ai',
+    title: 'Teaser: Pascoa vem aí',
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Pascoa vem ai...' },
+      { id: 1, content: 'Pascoa vem aí...' },
       { id: 2, content: 'Amigo Chocolate!' },
     ],
     date: '27/02/2026',
     time: '12h',
     boost: null,
-    caption: 'Amigo Chocolate vem ai!',
+    caption: 'Amigo Chocolate vem aí!',
     cta: '',
     hashtags: ['#Pascoa2026', '#AmigoChocolate', '#OAmigoSecreto'],
     category: 'teaser',
@@ -925,19 +978,19 @@ export const posts: PostData[] = [
   },
   {
     id: 44,
-    slug: 'tutorial-restricoes',
+    slug: 'tutorial-restrições',
     title: 'Tutorial: Algoritmo de Restricoes',
     type: 'reels',
     format: 'story',
     slides: [
       { id: 1, content: 'Tutorial: Restricoes' },
-      { id: 2, content: 'Como definir quem nao pode tirar quem' },
-      { id: 3, content: 'Demonstracao' },
+      { id: 2, content: 'Como definir quemnão pode tirar quem' },
+      { id: 3, content: 'Demonstração' },
     ],
     date: '28/02/2026',
     time: '18h',
     boost: null,
-    caption: 'Aprenda a usar as restricoes do app!',
+    caption: 'Aprenda a usar as restrições do app!',
     cta: 'Experimente - Link na bio',
     hashtags: ['#Tutorial', '#Restricoes', '#OAmigoSecreto', '#Algoritmo'],
     category: 'feature',
@@ -956,15 +1009,15 @@ export const posts: PostData[] = [
     format: 'square',
     slides: [
       { id: 1, content: 'AS ORGANIZADORAS' },
-      { id: 2, content: '78% dos grupos sao criados por mulheres' },
-      { id: 3, content: 'Maes que reunem a familia' },
+      { id: 2, content: '78% dos grupos são criados por mulheres' },
+      { id: 3, content: 'Mães que reunem a familia' },
       { id: 4, content: 'Amigas que mantem o grupo unido' },
       { id: 5, content: 'Profissionais de RH', subContent: 'Obrigado por fazer acontecer!' },
     ],
     date: '02/03/2026',
     time: '10h',
     boost: 100,
-    caption: 'Voces sao incriveis! 78% dos grupos sao criados e organizados por MULHERES.',
+    caption: 'Vocês são incríveis! 78% dos grupos são criados e organizados por MULHERES.',
     cta: 'Obrigado por escolher O Amigo Secreto',
     hashtags: ['#DiaInternacionalDaMulher', '#Mulheres', '#Organizadoras', '#OAmigoSecreto'],
     category: 'branding',
@@ -1000,7 +1053,7 @@ export const posts: PostData[] = [
     date: '08/03/2026',
     time: '09h',
     boost: 50,
-    caption: 'Feliz Dia Internacional da Mulher! A todas as mulheres que fazem as celebracoes acontecerem.',
+    caption: 'Feliz Dia Internacional da Mulher! A todas as mulheres que fazem as celebrações acontecerem.',
     cta: '',
     hashtags: ['#8DeMarco', '#DiaInternacionalDaMulher', '#Mulheres', '#Empoderamento'],
     category: 'branding',
@@ -1015,7 +1068,7 @@ export const posts: PostData[] = [
     format: 'square',
     slides: [
       { id: 1, content: 'AMIGO CHOCOLATE' },
-      { id: 2, content: 'A versao de Pascoa do amigo secreto!' },
+      { id: 2, content: 'A versão de Pascoa do amigo secreto!' },
       { id: 3, content: 'Todo mundo troca chocolates' },
       { id: 4, content: 'Use a wishlist para sugerir marcas' },
       { id: 5, content: 'Organize sua Pascoa!' },
@@ -1023,7 +1076,7 @@ export const posts: PostData[] = [
     date: '09/03/2026',
     time: '12h',
     boost: 75,
-    caption: 'Ja ouviu falar em AMIGO CHOCOLATE? E a versao de Pascoa do amigo secreto!',
+    caption: 'Já ouviu falar em AMIGO CHOCOLATE? E a versão de Pascoa do amigo secreto!',
     cta: 'Crie seu grupo - Link na bio',
     hashtags: ['#AmigoChocolate', '#Pascoa2026', '#TrocaDeChocolates', '#OAmigoSecreto'],
     category: 'seasonal',
@@ -1060,7 +1113,7 @@ export const posts: PostData[] = [
     format: 'story',
     slides: [
       { id: 1, content: 'Vai fazer Amigo Chocolate?' },
-      { id: 2, content: 'Sim / Nao / Talvez' },
+      { id: 2, content: 'Sim / Não / Talvez' },
     ],
     date: '14/03/2026',
     time: '12h',
@@ -1075,15 +1128,47 @@ export const posts: PostData[] = [
   {
     id: 51,
     slug: 'nova-feature',
-    title: 'Nova Feature',
-    type: 'static',
+    title: '5 Novas Features!',
+    type: 'carousel',
     format: 'square',
+    slides: [
+      { id: 1, content: '5 NOVAS FEATURES!' },
+      { id: 2, content: 'SORTEIO DEMOCRATICO', subContent: 'Todo mundo vota!' },
+      { id: 3, content: 'TEMAS DIVERTIDOS', subContent: 'Música, filme, meme' },
+      { id: 4, content: 'MURAL DE FOTOS', subContent: 'Feed do grupo' },
+      { id: 5, content: 'QUIZ DO GRUPO', subContent: 'Perguntas divertidas' },
+      { id: 6, content: 'RANKING DE PRESENTES', subContent: 'Vote no melhor!' },
+    ],
     date: '16/03/2026',
     time: '12h',
-    boost: null,
-    caption: 'Nova funcionalidade chegando!',
+    boost: 100,
+    caption: `🚀 CHEGARAM 5 NOVAS FEATURES! 🚀
+
+O app mais completo de Amigo Secreto ficou aínda melhor:
+
+🗳️ SORTEIO DEMOCRATICO
+Votacao para aprovar o sorteio. Até 3 rodadas!
+"Sorteio que todo mundo aprova!"
+
+🎵 TEMAS (Música, Filme, Meme)
+Sugira a música que representa cada pessoa!
+"Qual a música do Joao?"
+
+📸 MURAL DE FOTOS
+Feed igual Instagram so do grupo!
+"Registre os melhores momentos!"
+
+❓ QUIZ DO GRUPO
+Perguntas divertidas sobre os participantes!
+"Quem tem medo de barata?"
+
+🏆 RANKING DE PRESENTES
+Vote no presente mais criativo!
+"Quem deu o melhor presente?"
+
+Qual feature você mais quer usar? 👇`,
     cta: 'Atualize o app - Link na bio',
-    hashtags: ['#NovaFeature', '#Update', '#OAmigoSecreto'],
+    hashtags: ['#OAmigoSecreto', '#NovasFeatures', '#SorteioDemocratico', '#QuizDoGrupo', '#MuralDeFotos', '#RankingDePresentes', '#TemaDoGrupo', '#AppCompleto', '#AmigoSecretoDigital'],
     category: 'feature',
     month: 'marco',
     status: 'draft',
@@ -1091,20 +1176,20 @@ export const posts: PostData[] = [
   {
     id: 52,
     slug: 'dicas-uso',
-    title: 'Dicas de Uso que Voce Nao Sabia',
+    title: 'Dicas de Uso que Você Não Sabia',
     type: 'carousel',
     format: 'square',
     slides: [
-      { id: 1, content: '5 DICAS que voce nao sabia' },
-      { id: 2, content: 'QR Code para convite rapido' },
+      { id: 1, content: '5 DICAS que vocênão sabia' },
+      { id: 2, content: 'QR Code para convite rápido' },
       { id: 3, content: 'Restricoes multiplas no mesmo grupo' },
       { id: 4, content: 'Wishlist com links diretos' },
-      { id: 5, content: 'Chat anonimo com hints' },
+      { id: 5, content: 'Chat anônimo com hints' },
     ],
     date: '18/03/2026',
     time: '12h',
     boost: null,
-    caption: 'Dicas que voce provavelmente nao sabia!',
+    caption: 'Dicas que você provavelmentenão sabia!',
     cta: 'Domine o app - Link na bio',
     hashtags: ['#Dicas', '#Tips', '#OAmigoSecreto', '#TruquesDoApp'],
     category: 'feature',
@@ -1134,20 +1219,20 @@ export const posts: PostData[] = [
   {
     id: 54,
     slug: 'pov-chocolate',
-    title: 'POV: Revelacao de Amigo Chocolate',
+    title: 'POV: Revelação de Amigo Chocolate',
     type: 'reels',
     format: 'story',
     slides: [
-      { id: 1, content: 'POV: Voce descobre...' },
+      { id: 1, content: 'POV: Você descobre...' },
       { id: 2, content: 'Que seu amigo chocolate...' },
       { id: 3, content: 'Te deu o melhor chocolate!' },
     ],
     date: '22/03/2026',
     time: '18h',
     boost: null,
-    caption: 'Quem ja teve essa felicidade?',
+    caption: 'Quem já teve essa felicidade?',
     cta: 'Baixe o app - Link na bio',
-    hashtags: ['#POV', '#AmigoChocolate', '#Revelacao', '#Pascoa2026'],
+    hashtags: ['#POV', '#AmigoChocolate', '#Revelação', '#Pascoa2026'],
     category: 'engagement',
     month: 'marco',
     status: 'draft',
@@ -1161,13 +1246,13 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: 'COUNTDOWN PASCOA' },
       { id: 2, content: 'Faltam X dias!' },
-      { id: 3, content: 'Ja criou seu grupo?' },
+      { id: 3, content: 'Já criou seu grupo?' },
       { id: 4, content: 'Ainda da tempo!' },
     ],
     date: '23/03/2026',
     time: '10h',
     boost: 50,
-    caption: 'Pascoa chegando! Ja criou seu grupo de Amigo Chocolate?',
+    caption: 'Pascoa chegando! Já criou seu grupo de Amigo Chocolate?',
     cta: 'Crie agora - Link na bio',
     hashtags: ['#Countdown', '#Pascoa2026', '#AmigoChocolate', '#OAmigoSecreto'],
     category: 'seasonal',
@@ -1176,19 +1261,19 @@ export const posts: PostData[] = [
   },
   {
     id: 56,
-    slug: 'ultimas-dicas-pascoa',
-    title: 'Ultimas Dicas antes da Pascoa',
+    slug: 'últimas-dicas-pascoa',
+    title: 'Últimas Dicas antes da Pascoa',
     type: 'story',
     format: 'story',
     slides: [
-      { id: 1, content: 'Ultimas dicas!' },
+      { id: 1, content: 'Últimas dicas!' },
       { id: 2, content: 'Antes da Pascoa' },
-      { id: 3, content: 'Nao esqueca de...' },
+      { id: 3, content: 'Não esqueca de...' },
     ],
     date: '26/03/2026',
     time: '12h',
     boost: null,
-    caption: 'Ultimas dicas antes da Pascoa!',
+    caption: 'Últimas dicas antes da Pascoa!',
     cta: '',
     hashtags: ['#Dicas', '#Pascoa2026', '#AmigoChocolate'],
     category: 'seasonal',
@@ -1204,12 +1289,12 @@ export const posts: PostData[] = [
     slides: [
       { id: 1, content: 'Crie um grupo de Pascoa' },
       { id: 2, content: 'Em menos de 1 minuto!' },
-      { id: 3, content: 'Demonstracao rapida' },
+      { id: 3, content: 'Demonstração rápida' },
     ],
     date: '29/03/2026',
     time: '18h',
     boost: 50,
-    caption: 'Tutorial rapido: Como criar um grupo de Amigo Chocolate em menos de 1 minuto!',
+    caption: 'Tutorial rápido: Como criar um grupo de Amigo Chocolate em menos de 1 minuto!',
     cta: 'Baixe o app - Link na bio',
     hashtags: ['#Tutorial', '#AmigoChocolate', '#Pascoa2026', '#Em1Minuto'],
     category: 'feature',
@@ -1219,17 +1304,217 @@ export const posts: PostData[] = [
   {
     id: 58,
     slug: 'ultima-chamada-chocolate',
-    title: 'Ultima Chamada Amigo Chocolate',
+    title: 'Última Chamada Amigo Chocolate',
     type: 'static',
     format: 'square',
     date: '31/03/2026',
     time: '10h',
     boost: null,
-    caption: 'ULTIMA CHAMADA! Pascoa e essa semana. Ja criou seu grupo de Amigo Chocolate?',
+    caption: 'ULTIMA CHAMADA! Pascoa e essa semana. Já criou seu grupo de Amigo Chocolate?',
     cta: 'Crie agora - Link na bio',
-    hashtags: ['#UltimaChamada', '#AmigoChocolate', '#Pascoa2026', '#OAmigoSecreto'],
+    hashtags: ['#ÚltimaChamada', '#AmigoChocolate', '#Pascoa2026', '#OAmigoSecreto'],
     category: 'seasonal',
     month: 'marco',
+    status: 'draft',
+  },
+
+  // =============================================
+  // POSTS HUMANIZADOS - CRESCIMENTO DE SEGUIDORES
+  // =============================================
+  // Estes posts usam fotos royalty-free de pessoas reais
+  // para humanizar a marca e pedir apoio da comunidade
+
+  {
+    id: 59,
+    slug: 'h1-ajude-nos-crescer',
+    title: 'Ajude-nos a Crescer',
+    type: 'static',
+    format: 'square',
+    date: '13/12/2025',
+    time: '10h',
+    boost: null,
+    caption: `Oi, podemos ser sinceros com você?
+
+Somos uma equipe pequena de desenvolvedores brasileiros.
+
+Criamos O Amigo Secreto porque acreditamos que tecnologia para celebrar com família e amigos deveria ser:
+- Gratuita
+- Sem anúncios irritantes
+- Sem vender seus dados
+- Feita com carinho
+
+Mas para continuar existindo, precisamos de VOCÊ.
+
+Não pedimos dinheiro. Pedimos apenas: nos siga.
+
+Cada seguidor nos ajuda a:
+- Aparecer para mais pessoas
+- Continuar desenvolvendo
+- Manter o app 100% gratuito
+
+Se você acredita que apps podem ser diferentes...
+Se você quer apoiar criadores brasileiros...
+Se você usa e gosta do que fazemos...
+
+Toque em SEGUIR.
+
+É de graça. E muda tudo pra gente.`,
+    cta: 'SIGA nossa página',
+    hashtags: ['#Comunidade', '#AppBrasileiro', '#Gratuito', '#AmigoSecreto', '#ApoieLocal', '#DesenvolvimentoBrasil', '#OAmigoSecreto'],
+    category: 'engagement',
+    month: 'dezembro',
+    status: 'draft',
+  },
+  {
+    id: 60,
+    slug: 'h2-quem-faz-app',
+    title: 'Quem Faz o App',
+    type: 'story',
+    format: 'story',
+    slides: [
+      { id: 1, content: 'Por trás do app...', subContent: 'Uma equipe pequena, um sonho grande' },
+      { id: 2, content: 'Fazemos isso por VOCÊS', subContent: 'Para que toda família possa celebrar' },
+      { id: 3, content: 'Nos siga para apoiar', subContent: 'Você apoia apps gratuitos?' },
+    ],
+    date: '16/12/2025',
+    time: '19h',
+    boost: null,
+    caption: 'Conheça quem está por trás do O Amigo Secreto. Uma equipe pequena com um grande propósito.',
+    cta: 'Siga para apoiar',
+    hashtags: ['#Bastidores', '#QuemSomos', '#OAmigoSecreto', '#AppBrasileiro', '#Comunidade'],
+    category: 'engagement',
+    month: 'dezembro',
+    status: 'draft',
+  },
+  {
+    id: 61,
+    slug: 'h3-por-que-gratuitos',
+    title: 'Por Que Somos Gratuitos',
+    type: 'carousel',
+    format: 'square',
+    slides: [
+      { id: 1, content: 'POR QUE SOMOS 100% GRATUITOS?' },
+      { id: 2, content: 'Estamos cansados de apps que...', subContent: 'Te enchem de anúncios' },
+      { id: 3, content: 'Acreditamos que CELEBRAR', subContent: 'não deveria custar nada' },
+      { id: 4, content: 'Somos brasileiros que programam', subContent: 'de noite, depois do trabalho' },
+      { id: 5, content: 'COMO VOCÊ PODE AJUDAR', subContent: 'SIGA + COMPARTILHE + AVALIE' },
+    ],
+    date: '20/12/2025',
+    time: '10h',
+    boost: 50,
+    caption: `POR QUE O AMIGO SECRETO É 100% GRATUITO?
+
+Estamos cansados de apps que:
+- Te enchem de anúncios
+- Vendem seus dados
+- Cobram por tudo
+- Tratam você como produto
+
+Acreditamos que CELEBRAR em família não deveria custar nada.
+
+Somos brasileiros que programam de noite, depois do trabalho. Fazemos por amor. Pelo propósito. Não por lucro.
+
+COMO VOCÊ PODE AJUDAR:
+1. SIGA nossa página
+2. COMPARTILHE com amigos
+3. AVALIE o app (5 estrelas)
+4. USE e aproveite!
+
+Juntos, provamos que apps PODEM ser diferentes.`,
+    cta: 'SIGA + COMPARTILHE',
+    hashtags: ['#PorQueSomosGratuitos', '#AppGrátis', '#SemAnuncios', '#Comunidade', '#OAmigoSecreto', '#ApoieBrasileiros', '#NatalEmFamilia'],
+    category: 'engagement',
+    month: 'dezembro',
+    status: 'draft',
+  },
+  {
+    id: 62,
+    slug: 'h4-siga-para-gratuito',
+    title: 'Siga para App Gratuito',
+    type: 'static',
+    format: 'square',
+    date: '23/12/2025',
+    time: '12h',
+    boost: null,
+    caption: `Um pedido sincero antes do Natal...
+
+Você sabia que quando você SEGUE uma página, está votando no que quer ver mais?
+
+Ao seguir O Amigo Secreto, você diz ao Instagram:
+
+"Quero mais apps gratuitos"
+"Quero apoiar criadores brasileiros"
+"Quero tecnologia sem anúncios"
+
+Não custa nada. Leva 1 segundo.
+
+Mas para nós, significa TUDO.
+
+Significa que podemos:
+- Continuar o app gratuito em 2026
+- Criar novas funcionalidades
+- Ajudar mais famílias a celebrar
+
+Se você usou o app esse Natal...
+Se fácilitou seu amigo secreto...
+Se evitou aquele papelzinho...
+
+SIGA.
+
+É nossa única recompensa.
+
+Feliz Natal! E obrigado por existir.`,
+    cta: 'SIGA - É nossa única recompensa',
+    hashtags: ['#SigaNos', '#Apoie', '#AmigoSecreto', '#Natal2025', '#Gratuito', '#Comunidade', '#FeitoNoBrasil', '#OAmigoSecreto'],
+    category: 'engagement',
+    month: 'dezembro',
+    status: 'draft',
+  },
+  {
+    id: 63,
+    slug: 'h5-obrigado-comunidade',
+    title: 'Obrigado, Comunidade',
+    type: 'static',
+    format: 'square',
+    date: '25/12/2025',
+    time: '12h',
+    boost: null,
+    caption: `FELIZ NATAL, COMUNIDADE!
+
+Hoje, enquanto você abre presentes com quem ama...
+Enquanto revela seu amigo secreto...
+Enquanto celebra com família e amigos...
+
+Queremos agradecer.
+
+OBRIGADO por:
+- Baixar nosso app
+- Confiar em nós
+- Compartilhar com amigos
+- Acreditar que tecnologia pode ser gratuita
+- Nos seguir e apoiar
+
+Vocês são a razão de tudo isso existir.
+
+Não temos investidores milionários.
+Não temos escritório chique.
+Não temos time de marketing.
+
+Temos VOCÊS.
+
+E isso vale mais que qualquer coisa.
+
+De coração: OBRIGADO!
+
+Que 2026 seja repleto de celebrações...
+E estaremos aqui para cada uma delas.
+
+Com amor,
+Equipe O Amigo Secreto`,
+    cta: 'Feliz Natal!',
+    hashtags: ['#FelizNatal', '#Obrigado', '#Comunidade', '#Gratidao', '#OAmigoSecreto', '#Natal2025', '#AmigoSecreto'],
+    category: 'branding',
+    month: 'dezembro',
     status: 'draft',
   },
 ];
